@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lordsamdev Webpage</title>
+
+<!--Style Sheets for the Bulma Framework-->
+
+<link rel="stylesheet"  href="css/bulma.css">
+<link rel="stylesheet"  href="css/bulma.min.css">
+<link rel="stylesheet"  href="css/bulma-rtl.css">
+<link rel="stylesheet"  href="css/bulma-rtl.min.css">
+
+<script src="script.js"></script> <!--Link to Dark Mode Toggle Script-->
+
+<!--Inline styles for additional styling-->
+<style>
+    body{
+        padding: 20px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    .big{
+        color:var(--text-color);
+        font-size: 55px;
+    }
+
+    .big-2{
+        font-size: 55px;
+        color:var(--about-color);
+    }
+
+    .mod{
+        color: var(--about-color);
+    }
+
+    i {
+        padding-left: 10px;
+    }
+
+    strong{
+        color:var(--text-color);
+    }
+
+    .big-3{
+        font-size: 30px;
+        font-weight: lighter;
+        color:var(--text-color);
+    }
+    .big-4{
+        color: var(--about-color);
+        font-size: 20px;
+    }
+
+   
+    .profile-pic{
+        border-radius: 50%;
+        
+    }
+
+    #myBtn{
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        padding: 15px;
+        background-color: var(--about-color);
+        border-radius: 50%;
+    }
+
+    
+
+  .theme-btn{
+  width: 3em;
+  height: 3em;
+  padding: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.theme-btn img{
+  height: 100%;
+  width: 100;
+  object-fit: cover; 
+
+}
+
+.theme-btn.light{
+  display: none;
+
+}
+.dark .theme-btn.light{
+  display: block;
+  background-color: none;
+}
+
+.dark .theme-btn.dark{
+  display: none;
+}
+
+*{
+    font-weight: 300;
+}
+
+
+
+:root,
+:root.light{
+  --bg-color:#fff;
+  --text-color: black;
+  --about-color: black;
+  
+
+}
+
+:root.dark{
+  --bg-color: black;
+  --text-color:#fff;
+  --about-color:black;
+  
+}
+
+</style>
+<!--End of Inline Styles-->
+</head>  
+
+<body>
+        
+            <nav class="navbar has-background-white is-fixed" role="navigation" aria-label="main navigation">
+                <div class="navbar-menu is-active">
+                    <a class="navbar-item" href="#">
+                        <img src="images/logo.svg" alt="LordSamDev The Greatest Developer">
+                    </a>
+
+                    <a class="navbar-item has-text-black" href="#aboutme">About Me</a>
+                    <a class="navbar-item has-text-black" href="#myskills">My Skills</a>
+                    <a class="navbar-item has-text-black" href="#hireme">Hire Me</a>
+                </div>
+                <div class="navbar-end">
+                    <a class="navbar-item" href="www.twitter.com/lordsamdev">
+                        <span class="icon">
+                        <i>
+                            <img src="images/twitter.png">
+                        </i>
+                    </span>
+                    </a>
+                    <a class="navbar-item" href="www.github.com/Lordsamdev/">
+                        <span class="icon">
+                        <i>
+                            <img src="images/github.png">
+                        </i>
+                    </span>
+                    </a>
+                    <a class="navbar-item">
+                        <i>
+                        <div class="toggle-container">
+                            <button class="theme-btn light" title="light-mode" onclick="setTheme('light')">
+                            <img src="images/sunny.png" width="50px" height="50px"></button>
+                            <button class="theme-btn dark" title="dark-mode" onclick="setTheme('dark')"><img src="images/half-moon.png" width="50px" height="50px"></button>
+                        </div></i>
+                    </a>
+                </div>
+            </nav>
+
+            
+
+    <div class="content is-large">
+        <p class="big">The Greatest 
+            Self-taught Developer.</p> 
+        </div>
+
+
+            <div class="content is-small has-text-centered">
+            <img class="profile-pic" src="Images/lordsamdevblack.png" width="256" height="256">
+              </div>
+              <div class="content is-large">
+            <p>
+                I am <strong>Samuel Olubiyo</strong> a.k.a LordSamDev, a self-taught developer from Nigeria. I started my developer journey by learning 
+                Python, but I soon realized I need to learn <em>HTML5 and CSS3.</em>
+                I love building things, creating awesome stuff and designing.
+                I am interested in <em>Programming, Graphics Design, and Game Development. I attend the University of Ilorin where I'm studying for my <strong>Computer Engineering</strong> degree. P.S: I'll be 
+                    graduating in a few months. This Webpage is the second iteration of my personal website. The more skills I learn, the more sophisticated I can make my webpages.
+            </p></div>
+
+            <section class="hero is-full-height has-background-white">
+                <div class="hero-body">
+        
+                    <p class="big-2" id="aboutme">About Me.</p>
+                    <div class="content is-large has-text-centered">
+                        <p class="mod">
+                            Most people learn by watching. Others learn by doing, but I learn by building.
+                            I built this Webpage as a way to learn the Bulma CSS Framework. Did I get the hang of it?
+                            I'll let you decide that. I admit I am still a beginner but I have the ability to
+                            learn very fast. Oh, in case you are wondering, black and white are my favorite colors, especially black.
+                            I enjoy a good sleep, playing games, meditating and good food. I also write fantasy novels when I have the time.
+                        </p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <p class="big" id="myskills">My Skills.</h1>
+                        
+                    <h2 class="subtitle big-3">Here is a non-exhaustive list of my skills:</h2>
+                    
+                </div>
+                
+
+
+            </section>
+
+
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img src="Images/lordsamdevwhite.png" alt="Placeholder image">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">@LordSamDev</p>
+                        <p class="subtitle is-6">@lordsamdev</p>
+                      </div>
+                    </div>
+                
+                    <div class="content">
+                      Apart from the obvious fact that I am quite proficient in HTML5 and CSS3, here are other skills I possess:
+                      <ul>
+                          <li>Bulma CSS</li>
+                          <li>Foundation 6</li>
+                          <li>Python</li>
+                          <li>HTML5 Template Creation</li>
+                          <li>Vanilla CSS</li>
+                          <li>Responsive Web Design</li>
+                          <li>Inkscape</li>
+                          <li>SVG Graphics Design</li>
+
+                      </ul>
+                      <a>@bulmaio</a>.
+                      <a href="#">#python</a> <a href="#">#HTML5</a> <a href="#">#css3</a>
+                      <br>
+                      <time datetime="2021-30-10">11:09 PM - 30 Oct 2021</time>
+                    </div>
+                  </div>
+                <div class="card-image">
+                  <figure class="image is-2by1">
+                    <img src="Images/pexels-tima-miroshnichenko-5380678.jpg" alt="Placeholder image" width="256" height="128">
+                  </figure>
+                </div>
+                
+              </div>
+        
+              <section class="hero is-half-height">
+                  <div class="hero-body">
+                      <div class="container has-text-white">
+                          <h2 class="subtitle big-3" id="hireme">Want me to code for you or your company? Hiring me is as easy as clicking the button below. It'll be a decision you'll never regret!</h2>
+                          <a class="button" href="mailto:olubiyo43@gmail.com">Hire Me.</a>
+                      </div>
+                  </div>
+              </section>
+
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <p class="big-4">
+                     Designed and Built with <strong class="big-4">Bulma</strong> by <a href="www.twitter.com/lordsamdev">Samuel Olubiyo</a> aka LordSamDev.
+                     Copyright, 2021.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+            <button onclick="topFunction()" id="myBtn" title="go to top">
+            <img src="images/up-arrow.png">
+            </button>
+   
+    
+
+
+</body>
+
+
+
+
+
+
+<script>
+    mybutton = document.getElementById("myBtn");
+
+window.onscroll = function(){
+    scrollFunction()
+};
+
+function scrollFunction(){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        mybutton.style.display = "block";} else{
+            mybutton.style.display = "none";
+        }
+    
+    }
+
+    function topFunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
+</html>
